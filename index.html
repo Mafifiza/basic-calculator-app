@@ -8,9 +8,58 @@
   </head>
   <body>
     <h1>Basic Calculator App</h1>
+    <div class="calculator">
+      <input type="text" id="display" readonly />
+      <div class="buttons">
+        <button
+          onclick="appendToDisplay('+')"
+          class="calculator_key calculator_key--operator"
+        >
+          +
+        </button>
+        <button
+          onclick="appendToDisplay('-')"
+          class="calculator_key calculator_key--operator"
+        >
+          -
+        </button>
+        <button
+          onclick="appendToDisplay('*')"
+          class="calculator_key calculator_key--operator"
+        >
+          &times;
+        </button>
+        <button
+          onclick="appendToDisplay('/')"
+          class="calculator_key calculator_key--operator"
+        >
+          /
+        </button>
+        <button onclick="appendToDisplay('7')" class="calculator_key">7</button>
+        <button onclick="appendToDisplay('8')" class="calculator_key">8</button>
+        <button onclick="appendToDisplay('9')" class="calculator_key">9</button>
+        <button onclick="appendToDisplay('4')" class="calculator_key">4</button>
+        <button onclick="appendToDisplay('5')" class="calculator_key">5</button>
+        <button onclick="appendToDisplay('6')" class="calculator_key">6</button>
+        <button onclick="appendToDisplay('1')" class="calculator_key">1</button>
+        <button onclick="appendToDisplay('2')" class="calculator_key">2</button>
+        <button onclick="appendToDisplay('3')" class="calculator_key">3</button>
+        <button onclick="appendToDisplay('0')" class="calculator_key">0</button>
+        <button onclick="appendToDisplay('.')" class="calculator_key">.</button>
+        <button onclick="clearDisplay()" class="calculator_key">AC</button>
+        <button
+          onclick="calculate()"
+          class="calculator_key calculator_key--enter"
+        >
+          =
+        </button>
+      </div>
+    </div>
     <footer>
       This project was coded with 💞 by Refilwe Motaung and is
-      <a href="#" target="_blank">open-sourced on GitHub</a>
+      <a href="https://github.com/Mafifiza/basic-calculator-app" target="_blank"
+        >open-sourced on GitHub</a
+      >
     </footer>
     <script src="javascript/index.js"></script>
   </body>
